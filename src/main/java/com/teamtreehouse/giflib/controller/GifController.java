@@ -16,4 +16,9 @@ public class GifController {
     public String showGif(){
         return "here's the gif you clicked on!";
     }
+    @RequestMapping(value = "/about")
+    @ResponseBody
+    public String about(){
+        return "here's the about page for the app";
+    }
 }
